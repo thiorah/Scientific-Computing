@@ -1,0 +1,55 @@
+# Task 18: Numerical Solution of ODEs Using SciPy
+
+## 1. Objective
+To solve ordinary differential equations numerically using SciPy's `solve_ivp` function and understand how changing system parameters affects the results.
+
+## 2. Mathematical Concept
+An Ordinary Differential Equation describes how a quantity changes over time.
+
+SciPy provides `solve_ivp`, which numerically solves initial value problems using advanced numerical methods and automatic step-size adjustment.
+
+## 3. Original Problem
+The program models the charging of a capacitor in an RC electrical circuit.
+
+The differential equation is:
+
+**dV/dt = (Vs - V)/(RC)**
+
+Input values:
+- Supply voltage: 5 V
+- Resistance: 1000 ohms
+- Capacitance: 0.001 F
+- Initial voltage: 0 V
+- Simulation time: 5 seconds
+
+## 4. Tools Used
+- Python
+- NumPy
+- SciPy
+- Matplotlib
+- VS Code
+
+## 5. Original Results
+The capacitor voltage reached approximately 4.9663 V after 5 seconds, approaching the 5 V supply voltage.
+
+The numerical result was compared with the exact mathematical solution and showed very small error.
+
+## 6. Modified Experiment
+The capacitance was increased from 0.001 F to 0.002 F.
+
+After 5 seconds, the capacitor voltage was approximately 4.5896 V.
+
+The larger capacitance caused the capacitor to charge more slowly.
+
+## 7. New Real-World Application
+The program was adapted to simulate malware infection spreading across a network.
+
+The model started with 5 infected devices in a network of 1000 devices. Using a growth rate of 0.25 per hour, it estimated approximately 670 infected devices after 24 hours.
+
+This demonstrates how differential equations can be used to study infection trends in computer networks.
+
+## 8. Interpretation
+The results show that SciPy can solve differential equations accurately and efficiently. Changing capacitance affected the charging speed, while the cybersecurity application demonstrated how numerical modelling can represent changing network conditions.
+
+## 9. Conclusion
+The `solve_ivp` function is useful for solving dynamic problems in engineering, science and computing. It provides a more advanced numerical approach than manually applying Euler's method.
